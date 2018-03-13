@@ -1,0 +1,27 @@
+/*flexbox */
+.flex_container_2 {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:100%;
+}
+
+.flex_container_2 p {
+  line-height: 1.5rem;
+}
+
+.flex_item_big {
+  height:12rem;
+}
+
+.flex_item_small {
+  height:16rem;
+}
+
+@media only screen and (max-width: 1180px) {
+  .flex_item_small {
+    height:30rem;
+  }
+}

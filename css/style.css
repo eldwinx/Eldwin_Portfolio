@@ -194,22 +194,22 @@ svg text {
 	width: 5rem;
 	height: 5rem;
 	overflow: auto;
-	left: calc(100% - 100px);
+	left: calc(100% - 5rem);
 	top: 1.7rem;
   cursor:pointer;
 }
 
 .top, .middle{
 	position: absolute;
-	width: 3rem;
+	width: 2rem;
 	height: 0.1rem;
 	background-color: #4B4B4B;
 	transition: all 350ms ease-in-out;
-	top: 1.5rem;
+	top: 0.8rem;
 }
 
 .middle {
-	top: 2.5rem;
+	top: 1.7rem;
 }
 
 #menu {
@@ -256,7 +256,7 @@ svg text {
 .rotate {
 	transform: rotate(225deg);
 	-webkit-transform: rotate(225deg);
-	top: 30px;
+	top: 1rem;
 	background-color: black;
 	height: 2px;
   -webkit-transition: background-color 1s; /* Safari */
@@ -267,7 +267,7 @@ svg text {
 .rotate-back {
 	transform: rotate(-225deg);
 	-webkit-transform: rotate(-225deg);
-	top: 30px;
+	top: 1rem;
 	background-color: black;
 	height: 2px;
   -webkit-transition: background-color 1s; /* Safari */
@@ -276,11 +276,11 @@ svg text {
 }
 
 .top {
--webkit-animation-delay: 100ms;
+	-webkit-animation-delay: 100ms;
 }
 
 .middle {
--webkit-animation-delay: 250ms;
+	-webkit-animation-delay: 250ms;
 }
 
 .bottom {
@@ -333,66 +333,85 @@ svg text {
   margin-bottom: 2.5rem;
 }
 
-.flex_item_full img {
-  width:100%;
-  height:45rem;
-  opacity: 1;
-  -moz-transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+.img_box_full {
+	width:100%;
+	height:45rem;
+	overflow: hidden;
 }
 
-.flex_item_full img:hover {
-  opacity:0.7;
-  -moz-transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+.img_box_full img {
+  width:100%;
+  height:45rem;
+	-moz-transition: transform 0.3s;
+	-webkit-transition: transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.img_box_full img:hover {
+	transform:scale(1.2);
+	-moz-transition: transform 1s;
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
 }
 
 .flex_item_big {
   flex:2;
+	height:30rem;
   min-width:30rem;
   margin-right:5rem;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
-.flex_item_big img {
-  width:100%;
-  height:30rem;
-  -moz-transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+.img_box_big {
+	width:100%;
+	height:100%;
+	overflow: hidden;
 }
 
-.flex_item_big img:hover {
-  opacity:0.7;
-  -moz-transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+.img_box_big img {
+  width:100%;
+  height:100%;
+  -moz-transition: transform 1s;
+  -webkit-transition: transform 1s;
+  transition: transform 1s;
+}
+
+.img_box_big img:hover {
+	transform:scale(1.2);
+	-moz-transition: transform 1s;
+  -webkit-transition: transform 1s;
+  transition: transform 1s;
 }
 
 .flex_item_small {
   flex:1;
+	height:30rem;
   min-width:25rem;
   margin-right:5rem;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
-.flex_item_small img {
-  width:100%;
-  height:30rem;
-  -moz-transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+.img_box_small {
+	width:100%;
+	height:100%;
+	overflow: hidden;
 }
 
-.flex_item_small img:hover {
-  opacity:0.7;
-  -moz-transition: opacity 0.3s;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+.img_box_small img {
+  width:100%;
+	height:100%;
+	-moz-transition: transform 1s;
+  -webkit-transition: transform 1s;
+  transition: transform 1s;
+}
+
+.img_box_small img:hover {
+	transform:scale(1.2);
+	-moz-transition: transform 1s;
+  -webkit-transition: transform 1s;
+  transition: transform 1s;
 }
 
 /*process image*/
@@ -412,9 +431,32 @@ svg text {
     width:100%;
     height:100%;
     opacity: 0.2;
+		z-index: -1;
     -webkit-transition: opacity 2s; /* Safari */
     transition: opacity 2s;
   }
+
+	.nav_imgbg {
+		z-index: -1;
+	}
+
+	.rotate {
+		color: white;
+		-webkit-transition: background-color 1s; /* Safari */
+		transition: background-color 1s;
+		z-index: 100;
+	}
+
+	.rotate-back {
+		color: white;
+	  -webkit-transition: background-color 1s; /* Safari */
+	  transition: background-color 1s;
+		z-index: 100;
+	}
+
+	.reveal {
+		z-index:-1;
+	}
 
   .nav_imgbg {
     width: 100%;
@@ -427,6 +469,10 @@ svg text {
     -webkit-transition: color 1s; /* Safari */
     transition: color 1s;
   }
+
+	#menu {
+		left: calc(100% - 17rem);
+	}
 
   .rotate {
   	background-color: white;
@@ -447,4 +493,8 @@ svg text {
   .flex_item_small {
     margin-right: 0;
   }
+
+	svg {
+		left:1rem;
+	}
 }
