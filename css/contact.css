@@ -12,16 +12,23 @@
   line-height: 1.5rem;
 }
 
-.flex_item_big {
-  height:12rem;
-}
-
-.flex_item_small {
-  height:16rem;
-}
-
 @media only screen and (max-width: 1180px) {
-  .flex_item_small {
+  /* .img_item_small {
     height:30rem;
-  }
+  } */
 }
+
+/* @media only screen and (max-width:900px) {
+	.img_box_small img {
+		width:100%;
+		height:60rem;
+		margin-top:-10rem;
+	}
+}
+
+@media only screen and (max-width:600px) {
+	.img_box_small img {
+		height:30rem;
+		margin-top:-2rem;
+	}
+} */
