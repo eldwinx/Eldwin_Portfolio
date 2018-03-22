@@ -4,8 +4,9 @@
 }
 
 .grid {
-  width:80%;
+  width:100%;
   margin:auto;
+  margin-top:10rem;
   margin-bottom:10rem;
 }
 
@@ -38,9 +39,36 @@ img {
   height: auto;
 }
 
+@media only screen and (min-width:1600px) {
+  .grid__sizer,
+  .grid__item {
+    min-width: 20rem;
+  }
+
+  .grid__item--high,
+  .grid__item--high img {
+    height: 35rem;
+  }
+
+  .grid__item--low,
+  .grid__item--low img {
+    height: 15rem;
+  }
+}
+
 @media only screen and (max-width:700px) {
   .grid__sizer,
   .grid__item {
     width:100%;
+  }
+
+  .grid__item--high,
+  .grid__item--high img {
+    height: 35rem;
+  }
+
+  .grid__item--low,
+  .grid__item--low img {
+    height: 15rem;
   }
 }
