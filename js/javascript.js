@@ -91,7 +91,7 @@ $(document).ready(function() {
 
 
 /*masonry*/
-jQuery(window).on('load', function(){
+jQuery(window).on('load', function() {
 	var $ = jQuery;
   // Masonry grid setup
   $(".grid").masonry({

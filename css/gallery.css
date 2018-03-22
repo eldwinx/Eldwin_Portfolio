@@ -33,6 +33,11 @@
   height: 12rem;
 }
 
+.grid__item--lowest,
+.grid__item--lowest img {
+  height: 8rem;
+}
+
 img {
   width: 100%;
   max-width: 100%;

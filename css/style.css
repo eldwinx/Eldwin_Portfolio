@@ -836,4 +836,7 @@ ul.social-icons {
 		height:30rem;
 		margin-top:-6rem;
 	} */
+	.flex_text {
+		min-width: 25rem;
+	}
 }
