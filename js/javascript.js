@@ -1,3 +1,13 @@
+$(document).on("scroll", function() {
+
+	if($(document).scrollTop()>100) {
+		$("header").removeClass("noScroll").addClass("scroll");
+	} else {
+		$("header").removeClass("scroll").addClass("noScroll");
+	}
+
+});
+
 $(document).ready(function(){
 	$('.hamburger-shell').click(function(){
 		$('#menu').slideToggle(300);
@@ -78,3 +88,15 @@ $(document).ready(function() {
 		});
 
 });
+
+
+/*masonry*/
+(function() {
+  // Masonry grid setup
+  $(".grid").masonry({
+    itemSelector: ".grid__item",
+    columnWidth: ".grid__sizer",
+    gutter: 15,
+    percentPosition: true
+  });
+})();

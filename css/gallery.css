@@ -1,0 +1,46 @@
+/*flexbox */
+.flex_section {
+  margin-top: 5rem;
+}
+
+.grid {
+  width:80%;
+  margin:auto;
+  margin-bottom:10rem;
+}
+
+.grid__sizer,
+.grid__item {
+  position: relative;
+  width: 19.35%;
+  min-width: 18rem;
+}
+
+.grid__item {
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.grid__item--high,
+.grid__item--high img {
+  height: 30rem;
+}
+
+.grid__item--low,
+.grid__item--low img {
+  height: 12rem;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width:700px) {
+  .grid__sizer,
+  .grid__item {
+    width:100%;
+  }
+}

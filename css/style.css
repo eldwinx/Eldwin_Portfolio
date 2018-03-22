@@ -73,6 +73,7 @@ section.paragraph_section {
   position:fixed;
   top:0;
   left:2.5rem;
+	z-index: 700;
 }
 
 /*heading styles*/
@@ -90,6 +91,18 @@ h2 {
 h3 {
   font-size: 0.8rem;
   font-weight: 500;
+  color: #7e7e7e;
+}
+
+h4 {
+	font-size: 0.7rem;
+	font-weight: 500;
+	color: #4B4B4B;
+}
+
+h5 {
+	font-size: 0.7rem;
+  font-weight:500;
   color: #7e7e7e;
 }
 
@@ -439,6 +452,29 @@ svg text {
   transition: transform 1s;
 }
 
+
+.flex_container_2 {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:100%;
+}
+
+.flex_text {
+	flex:1;
+	margin-top: 1rem;
+	min-width: 20rem;
+}
+
+.flex_text h4:hover {
+	color:#7e7e7e;
+	-moz-transition: color 1s;
+	-webkit-transition: color 1s;
+	transition: color 1s;
+}
+
 /*rolling text*/
 .wrapper {
   padding: 0;
@@ -460,7 +496,26 @@ svg text {
 }
 
 /*scrolling effect*/
+.noScroll {
+  position:fixed;
+	top:0;
+  width:100%;
+  height:5rem;
+	z-index: 200;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
 
+.scroll {
+  position:fixed;
+  background-color:#fff;
+  width:100%;
+	top:0;
+  height:5rem;
+	z-index: 200;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
 
 
 /*process image*/
