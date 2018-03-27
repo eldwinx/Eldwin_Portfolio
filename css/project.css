@@ -87,6 +87,10 @@
   .img_box_small img{
     margin-top:0;
   }
+
+  .flex_item_big {
+    margin-top: 0;
+  }
 }
 
 
