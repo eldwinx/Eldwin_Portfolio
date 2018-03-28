@@ -91,6 +91,10 @@
   .flex_item_big {
     margin-top: 0;
   }
+
+  .flex_section_project {
+    margin-top:5vh;
+  }
 }
 
 
